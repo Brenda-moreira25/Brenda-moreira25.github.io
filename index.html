@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links de Redes Sociais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <style>
+        body {
+            background-color: #ffe5e5; /* Rosa claro */
+            color: #000000; /* Preto */
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            animation: fadeIn 1s ease, pulse 2s infinite alternate; /* Adiciona animações */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes pulse {
+            from { box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+            to { box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); }
+        }
+
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+             animation: fadeIn 1s ease, pulse 2s infinite alternate;
+        }
+
+
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #d8b4fe;
+             animation: fadeIn 1s ease, pulse 2s infinite alternate;
+        }
+
+        .bio {
+            font-size: 18px;
+            color: #000000;
+            margin-bottom: 20px;
+            padding: 0 10px;
+            line-height: 1.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: bold; /* Negrito para a bio */
+             animation: fadeIn 1s ease, pulse 2s infinite alternate;
+        }
+
+        .bio img {
+            width: 20px;
+            height: 20px;
+        }
+
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            margin-bottom: 20px;
+        }
+
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            font-style: italic; /* Itálico para os links */
+             animation: fadeIn 1s ease, pulse 2s infinite alternate;
+        }
+
+        .social-button:hover {
+            background-color: #f0f0f0;
+             animation: fadeIn 1s ease, pulse 2s infinite alternate;
+        }
+
+        .social-button i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        footer {
+            font-size: 14px;
+            color: #555555;
+            margin-top: 20px;
+             animation: fadeIn 1s ease, pulse 2s infinite alternate;
+        }
+
+        /* Estilos específicos para dispositivos móveis */
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+            .bio {
+                font-size: 16px;
+            }
+             .bio img {
+                width: 18px;
+                height: 18px;
+             }
+            .social-button {
+                font-size: 16px;
+                padding: 12px 15px;
+            }
+            .social-button i {
+                font-size: 18px;
+            }
+            footer {
+                font-size: 12px;
+            }
+        }
+
+        /* Mudança de cor para azul escuro */
+        body {
+            color: #00008B;
+        }
+        .social-button {
+            color: #00008B;
+        }
+        .social-button:hover {
+             color: #00008B;
+        }
+        .bio{
+            color: #00008B;
+        }
+        footer {
+            color: #00008B;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHqhlrneKWE0A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1732304832255?e=1749081600&v=beta&t=rYqhOXqJ1R6cawO4bztD7ceZX3lYS8H8rFpZ5s-_U8U">
+        <p class="bio">
+            <img src="https://logodownload.org/wp-content/uploads/2016/10/Instagram-logo-14.png" alt="Logo do Instagram">
+            Olá, me chamo [Seu Nome] e sou [Sua Profissão/Descrição]. Bem-vindo à minha página de links! Aqui você encontra meus principais perfis nas redes sociais e outros links importantes.
+        </p>
+        <div class="links-container">
+            <a href="https://www.instagram.com/b.mooreira/" class="social-button" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://br.linkedin.com/in/brenda-moreira-a99224158" class="social-button" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Brenda-moreira25" class="social-button" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+        <footer>
+            <p>© 2024 Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
